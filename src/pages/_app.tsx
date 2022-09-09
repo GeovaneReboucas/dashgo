@@ -5,18 +5,17 @@ import { theme } from "../styles/theme";
 
 import { ReactQueryDevtools } from 'react-query/devtools';
 import { makeServer } from "../services/mirage";
-import { QueryClient, QueryClientProvider } from 'react-query';
+import { QueryClientProvider } from 'react-query';
+import { queryClient } from "../services/queryClient";
 
 if(process.env.NODE_ENV == 'development'){
   makeServer();
 }
 
-const queryCLient = new QueryClient();
-
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
-      <QueryClientProvider client={queryCLient}>
+      <QueryClientProvider client={queryClient}>
         <ChakraProvider theme={theme}>
           <SidebarDrawerProvider>
             <Component {...pageProps} />
