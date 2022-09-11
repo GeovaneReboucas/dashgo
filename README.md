@@ -1,34 +1,42 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<h1 align='center'>Dashgo</h1>
 
-## Getting Started
+## Sobre
 
-First, run the development server:
+Dashgo é um projeto de uma dashboard administrativa completamente responsiva com gráficos, tela de login, tabela de usuários e formulários com validação. O sistema usa várias tecnologias e ferramentas essenciais, em destaque o Chakra UI para o desenvolvimento da interface.
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+## Layout
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+![dashgo1](https://user-images.githubusercontent.com/87788683/189507214-c228ad4a-454f-447e-8156-7e1432e97986.png)
+![dash2](https://user-images.githubusercontent.com/87788683/189507215-30416c48-9e05-473d-9b6d-db7ca2d310e0.png)
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## Tecnologias
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+Foram usadas as tecnologias e ferramentas abaixo:
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+- [ReactJS](https://reactjs.org/)
+- [Next.js](https://nextjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Chakra UI](https://chakra-ui.com/)
+- [React Hook Form](https://react-hook-form.com/)
+- [React Query](https://react-query.tanstack.com/)
+- [Mirage JS](https://miragejs.com/)
 
-## Learn More
+## Como Usar 🤔
 
-To learn more about Next.js, take a look at the following resources:
+   ```
+   - Clone esse repositório:
+   $ git clone https://github.com/GeovaneReboucas/dashGo
+   - Entre no diretório:
+   $ cd dashGo
+   - Instale as dependências:
+   $ yarn install
+   - Inicie a aplicação
+   $ yarn start
+   
+   ```  
+   
+<hr/>
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+<p align="center">
+  Feito com 💙 por <a href="https://github.com/GeovaneReboucas">Geovane Rebouças Bezerra</a>
+</p>
