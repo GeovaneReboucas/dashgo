@@ -3,6 +3,7 @@ import { useForm, SubmitHandler, FieldError } from "react-hook-form";
 import { Input } from "../components/Form/Input";
 import * as yup from 'yup';
 import { yupResolver } from '@hookform/resolvers/yup';
+import { useRouter } from "next/router";
 
 type SignInFormData = {
   email: string;
@@ -16,13 +17,17 @@ const signInFormSchema = yup.object().shape({
 
 export default function SignIn() {
   const { register, handleSubmit, formState } = useForm({
-    resolver: yupResolver(signInFormSchema)
+    resolver: yupResolver(signInFormSchema), 
+    mode: 'onChange'
   });
 
   const { errors } = formState;
 
+  const router = useRouter();
+
   const handleSignIn: SubmitHandler<SignInFormData> = async (values) => {
     await new Promise(resolve => setTimeout(resolve, 2000));
+    router.push('/dashboard');
 
     console.log(values);
   }
@@ -45,7 +50,7 @@ export default function SignIn() {
           <Input name="password" label="password" type="password" {...register('password')} error={errors.password as FieldError} />
         </Stack>
 
-        <Button type="submit" mt='6' colorScheme='teal' size='lg' isLoading={formState.isSubmitting}>
+        <Button type="submit" mt='6' colorScheme='teal' size='lg' disabled={!formState.isDirty || !formState.isValid} isLoading={formState.isSubmitting}>
           Entrar
         </Button>
 
