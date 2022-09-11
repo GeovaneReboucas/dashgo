@@ -7,6 +7,7 @@ Dashgo é um projeto de uma dashboard administrativa completamente responsiva co
 ## Layout
 
 ![dashgo1](https://user-images.githubusercontent.com/87788683/189507214-c228ad4a-454f-447e-8156-7e1432e97986.png)
+
 ![dash2](https://user-images.githubusercontent.com/87788683/189507215-30416c48-9e05-473d-9b6d-db7ca2d310e0.png)
 
 ## Tecnologias
@@ -25,11 +26,14 @@ Foram usadas as tecnologias e ferramentas abaixo:
 
    ```
    - Clone esse repositório:
-   $ git clone https://github.com/GeovaneReboucas/dashGo
+   $ git clone https://github.com/GeovaneReboucas/dashgo
+   
    - Entre no diretório:
-   $ cd dashGo
+   $ cd dashgo
+   
    - Instale as dependências:
    $ yarn install
+   
    - Inicie a aplicação
    $ yarn start
    
